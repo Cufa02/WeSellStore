@@ -46,14 +46,13 @@ a{
     display: flex;
     align-items: center;
     height: 3rem;
-    width: 41vw;
+    width: 100vw;
     background-image: linear-gradient(to left, #d8d6d6, #d3d1d2, #cecdcd, #c9c9c9, #c4c4c4, #c0c0c0, #bdbcbd, #b9b8b9, #b5b4b5, #b2afb0, #aeabac, #aaa7a7);
     position: fixed;
     box-shadow: 4px 10px 31px -7px rgba(0,0,0,0.57);
 -webkit-box-shadow: 4px 10px 31px -7px rgba(0,0,0,0.57);
 -moz-box-shadow: 4px 10px 31px -7px rgba(0,0,0,0.57);
     border-radius: 40px;
-    margin-left: 58vw;
     margin-top: 0.5vw;
 }
 
@@ -92,7 +91,6 @@ a{
 }
 
 #imagen img:hover{
-    transform: translateX(-30%);
     filter: brightness(80%);
 }
 
@@ -350,7 +348,7 @@ a{
     background-image: linear-gradient(to bottom, #f3f3f3, #efefef, #ebebeb, #e7e7e7, #e3e3e3, #e0e0e0, #dedede, #dbdbdb, #d9d9d9, #d7d7d7, #d6d6d6, #d4d4d4);   
 }
 
-/* --------------------------- PARA IPHONE 12 PRO --------------------------- */
+/* --------------------------- MOBILE --------------------------- */
 @media screen and (max-width: 576px){
     .nav{
         width: 95vw;
@@ -359,12 +357,15 @@ a{
     }
     .nav div a{
         font-size: small;
-        margin: 0rem;
+        margin: 1rem;
         margin-right: 0.3em;
-        padding-left: 1em ;
+        padding-left: 0em ;
     }
     .vintagestore{
         padding-top: 3rem;
+    }
+    #inicio{
+        height: 30vh;
     }
     #imagen{
         max-width: 50vw;
@@ -375,7 +376,8 @@ a{
     width: 70vw;
     }
     #productosdestacados_titulo{
-        margin-top: 0;
+        margin-top: 0rem;
+        padding-top: 0;
     }
     #carouselExampleIndicators.carousel.slide{
         margin-left: 0px;
@@ -414,6 +416,7 @@ a{
         grid-template-rows: repeat(1, 25em);
         padding-left: 0rem;
         row-gap: 10em;
+        padding-left: 0.5rem;
     }
     .art1 h1{
         font-size: x-large;
@@ -495,5 +498,235 @@ a{
     }
     #contacto_sec1 article{
         padding-top: 6rem;
+    }
+}
+    /* --------------------------------- TABLET --------------------------------- */
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        .nav{
+            width: 100vw;
+        }
+        .nav div a{
+            font-size: large;
+            margin: 1rem;
+            margin-right: 2rem;
+        }
+        .vintagestore{
+            margin-left: 2rem;
+            padding-top: 1.5rem;
+        }
+        .carousel-inner{
+            margin-left: 1rem;
+            width: 70vw;
+            height: 30vh;
+            margin-bottom: 1rem;
+        }
+        #carouselExampleIndicators.carousel.slide{
+            margin-left: 100px;
+            margin-right: 110px;
+            margin-top: 0px;
+        }
+        #portadajerseys{
+            background: url(../multimedia/imagenes/jerseys.jpg);
+        }
+        #productos_shorts{
+            margin-top: 2rem;
+        }
+        #productos_shorts div img{
+            width: 15em;
+            height: 15em;
+        }
+        #boxes{
+            display: grid;
+            grid-template-columns:  repeat(1, 25em);
+            grid-template-rows: repeat(4, 25em);
+            gap: 2em;
+            row-gap: 10.2em;
+            padding-left: 11em;
+        }
+        .sec1_sobrenosotros{
+            width: 40rem;
+            display: flex;
+            padding-top: 10rem;
+            padding-left: 1rem;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #contacto_sec1 img{
+            padding-top: 10rem;
+            width: 60vw ;   
+        }
+        #contacto_sec1 article{
+            padding-top: 6rem;
+        }
+    }
+    /* --------------------------------- LAPTOP --------------------------------- */
+    @media screen and (min-width: 769px) and (min-width: 1024px){
+        .carousel-inner{
+            margin-left: 1rem;
+            width: 70vw;
+            height: 50vh;
+            margin-bottom: 1rem;
+        }
+        #carouselExampleIndicators.carousel.slide{
+            margin-left: 100px;
+            margin-right: 110px;
+            margin-top: 0px;
+        }
+        #productos_shorts{
+            margin-top: 2rem;
+        }
+        #productos_shorts div img{
+            width: 18em;
+            height: 18em;
+        }
+        #boxes{
+            display: grid;
+            grid-template-columns:  repeat(2, 25em);
+            grid-template-rows: repeat(4, 25em);
+            gap: 2em;
+            row-gap: 10.2em;
+            padding-left: 6rem;
+            padding-bottom: 2rem;
+        }
+        .sec1_sobrenosotros{
+            width: 40rem;
+            display: flex;
+            padding-top: 10rem;
+            padding-left: 10rem;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #contacto_sec1 img{
+            padding-top: 10rem;
+            width: 60vw ;   
+        }
+        #contacto_sec1 article{
+            padding-top: 6rem;
+        }
+    }
+    /* -------------------------------- LAPTOP L -------------------------------- */
+    @media screen and (min-width: 1025px) and (min-width: 1440px){
+        .nav div a{
+            font-size: large;
+            margin: 1rem;
+            margin-right: 2rem;
+        }
+        .vintagestore{
+            margin-left: 2rem;
+            padding-top: 1.5rem;
+        }
+        #carouselExampleIndicators.carousel.slide{
+            margin-left: 250px;
+            margin-right: 110px;
+            margin-top: 0px;
+        }
+        .carousel-inner{
+            margin-left: 1rem;
+            width: 70vw;
+            height: 70vh;
+            margin-bottom: 1rem;
+        }
+        #boxes{
+            display: grid;
+            grid-template-columns:  repeat(3, 25em);
+            grid-template-rows: repeat(4, 30rem);
+            gap: 2em;
+            row-gap: 10.2em;
+            padding-left: 6rem;
+            padding-bottom: 2rem;
+        }
+        .sec1_sobrenosotros{
+            width: 50rem;
+            display: flex;
+            padding-top: 10rem;
+            padding-left: 14rem;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    /* ----------------------------------- 4K ----------------------------------- */
+    @media screen and (min-width: 1441px) and (min-width: 2560px){
+        .nav{
+            height: 2.5vw;
+        }
+        .nav div a{
+            font-size: x-large;
+            margin: 2rem;
+            margin-right: 2rem;
+        }
+        .vintagestore{
+            margin-left: 2rem;
+            padding-top: 3rem;
+        }
+        #imagen{
+            height: 100%;
+        }
+        #productosdestacados_titulo{
+            margin-top: 5rem;
+        }
+        #carouselExampleIndicators.carousel.slide{
+            margin-left: 10vw;
+            margin-right: 10vw;
+            margin-top: 100px;
+        }
+        .carousel-inner{
+            margin-left: 8rem;
+            width: 70vw;
+            height: 100vh;
+            margin-bottom: 1rem;
+        }
+        #boxes{
+            display: grid;
+            grid-template-columns:  repeat(5, 25em);
+            grid-template-rows: repeat(4, 30rem);
+            gap: 2em;
+            row-gap: 10.2em;
+            padding-left: 10rem;
+            padding-bottom: 2rem;
+        }
+        #productos_shorts{
+            margin-top: 2rem;
+        }
+        #productos_shorts div img{
+            width: 40em;
+            height: 40em;
+        }
+        #productos_shorts div h2{
+            margin-top: 0.625em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: var(--color4);
+            font-size: 1.5vw;
+        }
+        .sec1_sobrenosotros{
+            width: 90rem;
+            display: flex;
+            padding-top: 10rem;
+            padding-left: 25rem;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #contacto_sec1 article h1{
+            padding-top: 5rem;
+            font-size: 70px;   
+        }
+        #contacto_sec1 article p{
+            padding-top: 5rem;
+            font-size: 40px;   
+        }
+        #contacto_sec1 img{
+            padding-top: 10rem;
+            width: 50vw ;
+            height: 100vh;
+            padding-right: 5rem;
+        }
+        #contacto_sec1 article{
+            padding-top: 6rem;
+        }
+        .iconito{
+            font-size: 3vh;
+            margin-top: 10vh;
+        }
     }
 }
