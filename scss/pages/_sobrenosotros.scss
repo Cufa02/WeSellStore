@@ -1,0 +1,53 @@
+.sec1_sobrenosotros{
+    width: 75rem;
+    display: flex;
+    padding-top: 10rem;
+    padding-left: 15rem;
+    align-items: center;
+    justify-content: space-around;
+
+    img{
+        max-width: 100%;
+        width: 40vw;
+        height: 40vw;
+        border-radius: 20%;
+    }
+}
+
+.texto1_sobrenosotros{
+    padding-left: 10rem;
+    font-size: 2vw;
+
+    h1{
+        padding-bottom: 20px;
+        font-family: fantasy;
+    }
+}
+
+.sec2_sobrenosotros{
+    padding-right: 5rem;
+    display: flex;
+    padding-top: 10rem;
+    padding-left: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding-bottom: 4rem;
+
+    img{
+        max-width: 100%;
+        width: 40vw;
+        height: 40vw;
+        border-radius: 20%;
+    }
+}
+
+.texto2_sobrenosotros{
+    padding-left: 10rem;
+    font-size: 2vw;
+
+    h1{
+        padding-bottom: 20px;
+        font-family: fantasy;
+    }
+}
