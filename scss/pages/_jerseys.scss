@@ -1,11 +1,14 @@
-#portadajerseys{
-    background: url(../multimedia/imagenes/jerseys.jpg);
+.portadaa{
     background-size: cover;
     height: 37.5em;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     background-attachment: fixed;
+}
+
+#portadajerseys{
+    background: url(../multimedia/imagenes/jerseys.jpg);
 }
 
 .titulojerseys{ 
@@ -17,22 +20,21 @@
     color: azure;
 }
 #boxes{
+    @extend .box;
     display: grid;
-    grid-template-columns:  repeat(4, 25em);
-    grid-template-rows: repeat(4, 25em);
+    grid-template-columns:  repeat(3, 25em);
+    grid-template-rows: repeat(3, 25em);
     gap: 2em;
     row-gap: 10.2em;
-    padding-left: 5.2em;
+    padding-left: 0em;
 }
 
 .box{
-    background-color: $color3;
     transition: transform .5s;
     justify-content: center;
 
     h2{
-        display: flex;
-        align-items: center;
+        @include flexcenter;
         justify-content: space-around;
         font-size: x-large;
         padding-top: 0.7rem;
@@ -51,3 +53,11 @@
         }
     }
 }
+/* -------------------------------- VARIABLES ------------------------------- */
+@import "./misc/variables";
+/* -------------------------------- NORMALIZE ------------------------------- */
+@import "./misc/normalize";
+/* --------------------------------- HEADER --------------------------------- */
+@import "./partials/header";
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+@import "./partials/mediaqueries";

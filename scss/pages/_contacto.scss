@@ -27,11 +27,19 @@
 
 .iconito{
     margin-top: 2.5em;
-    display: flex;
+    @include flexcenter;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    align-items: center;
     font-family:fantasy;
     margin-left: 0.625em;
     color: $color4;
 }
+
+/* -------------------------------- VARIABLES ------------------------------- */
+@import "./misc/variables";
+/* -------------------------------- NORMALIZE ------------------------------- */
+@import "./misc/normalize";
+/* --------------------------------- HEADER --------------------------------- */
+@import "./partials/header";
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+@import "./partials/mediaqueries";

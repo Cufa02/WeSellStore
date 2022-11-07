@@ -1,11 +1,14 @@
-#portadashorts{
-    background: url(../multimedia/imagenes/shorts.jpg);
+.portadaa{
     background-size: cover;
     height: 37.5em;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     background-attachment: fixed;
+}
+
+#portadashorts{
+    background: url(../multimedia/imagenes/shorts.jpg);
 }
 
 #productos_shorts{
@@ -23,9 +26,8 @@
     div{
         h2{
             margin-top: 0.625em;
-            display: flex;
+            @include flexcenter;
             justify-content: space-around;
-            align-items: center;
             color: $color4;
         }
         img{
@@ -43,39 +45,11 @@
     }
 }
 
-#boxes{
-    display: grid;
-    grid-template-columns:  repeat(4, 25em);
-    grid-template-rows: repeat(4, 25em);
-    gap: 2em;
-    row-gap: 10.2em;
-    padding-left: 5.2em;
-}
-
-.box{
-    
-    background-color: $color3;
-    transition: transform .5s;
-    justify-content: center;
-
-    h2{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        font-size: x-large;
-        padding-top: 0.7rem;
-        color: $color4;
-    }
-
-    img{
-        width: 25em;
-        height: 30em;
-        box-shadow: 3px 8px 17px -6px rgba(0,0,0,0.62);
-        -webkit-box-shadow: 3px 8px 17px -6px rgba(0,0,0,0.62);
-        -moz-box-shadow: 3px 8px 17px -6px rgba(0,0,0,0.62);
-        transition: transform .5s;
-        &:hover{
-            transform: scale(1.05);
-        }
-    }
-}
+/* -------------------------------- VARIABLES ------------------------------- */
+@import "./misc/variables";
+/* -------------------------------- NORMALIZE ------------------------------- */
+@import "./misc/normalize";
+/* --------------------------------- HEADER --------------------------------- */
+@import "./partials/header";
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+@import "./partials/mediaqueries";

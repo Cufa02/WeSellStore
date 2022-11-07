@@ -1,9 +1,8 @@
 .sec1_sobrenosotros{
     width: 75rem;
-    display: flex;
+    @include flexcenter;
     padding-top: 10rem;
     padding-left: 15rem;
-    align-items: center;
     justify-content: space-around;
 
     img{
@@ -26,10 +25,9 @@
 
 .sec2_sobrenosotros{
     padding-right: 5rem;
-    display: flex;
+    @include flexcenter;
     padding-top: 10rem;
     padding-left: 5rem;
-    align-items: center;
     justify-content: space-around;
     flex-direction: row-reverse;
     padding-bottom: 4rem;
@@ -51,3 +49,12 @@
         font-family: fantasy;
     }
 }
+
+/* -------------------------------- VARIABLES ------------------------------- */
+@import "./misc/variables";
+/* -------------------------------- NORMALIZE ------------------------------- */
+@import "./misc/normalize";
+/* --------------------------------- HEADER --------------------------------- */
+@import "./partials/header";
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+@import "./partials/mediaqueries";

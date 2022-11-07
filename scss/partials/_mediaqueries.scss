@@ -1,18 +1,19 @@
 /* --------------------------- MOBILE --------------------------- */
 @media screen and (max-width: 576px){
     .nav{
-        width: 95vw;
-        margin-left: 0.8rem;
+        width: 90vw;
+        margin-left: 2.7rem;
         margin-top: 1rem;
     }
     .nav div a{
-        font-size: small;
-        margin: 1rem;
-        margin-right: 0.3em;
+        font-size: x-small;
+        margin: 0.2rem;
+        margin-right: 1em;
         padding-left: 0em ;
     }
     .vintagestore{
         padding-top: 3rem;
+        padding-left: 5rem;
     }
     #inicio{
         height: 30vh;
@@ -26,7 +27,7 @@
     width: 70vw;
     }
     #productosdestacados_titulo{
-        margin-top: 0rem;
+        margin-top: 12rem;
         padding-top: 0;
     }
     #carouselExampleIndicators.carousel.slide{
@@ -52,6 +53,7 @@
     }
     #portadajerseys{
         height: 20.5em;
+        width: 100vw;
         background: url(../multimedia/imagenes/jerseys.jpg);
     }
     #productos_shorts{
